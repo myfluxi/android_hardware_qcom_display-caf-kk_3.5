@@ -1,19 +1,19 @@
 #Common headers
-common_includes := hardware/qcom/display/libgralloc
-common_includes += hardware/qcom/display/liboverlay
-common_includes += hardware/qcom/display/libcopybit
-common_includes += hardware/qcom/display/libqdutils
-common_includes += hardware/qcom/display/libhwcomposer
-common_includes += hardware/qcom/display/libexternal
-common_includes += hardware/qcom/display/libqservice
-common_includes += hardware/qcom/display/libvirtual
+common_includes := hardware/qcom/display-caf-kk_3.5/libgralloc
+common_includes += hardware/qcom/display-caf-kk_3.5/liboverlay
+common_includes += hardware/qcom/display-caf-kk_3.5/libcopybit
+common_includes += hardware/qcom/display-caf-kk_3.5/libqdutils
+common_includes += hardware/qcom/display-caf-kk_3.5/libhwcomposer
+common_includes += hardware/qcom/display-caf-kk_3.5/libexternal
+common_includes += hardware/qcom/display-caf-kk_3.5/libqservice
+common_includes += hardware/qcom/display-caf-kk_3.5/libvirtual
 
 ifeq ($(TARGET_USES_POST_PROCESSING),true)
     common_flags     += -DUSES_POST_PROCESSING
     common_includes  += $(TARGET_OUT_HEADERS)/pp/inc
 endif
 
-common_header_export_path := qcom/display
+common_header_export_path := qcom/display-caf-kk_3.5
 
 #Common libraries external to display HAL
 common_libs := liblog libutils libcutils libhardware
